@@ -1,0 +1,4 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "python.analysis.typeCheckingMode": "off"
+}

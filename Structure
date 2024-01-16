@@ -1,0 +1,122 @@
+### Application Folder Structure:
+
+First, let's organize the folder structure for your project. You mentioned having a Venv folder, horses.csv, TJK_horse_stats.py, and main.py. Here's a suggested structure:
+
+```
+horse_racing_app/
+├── venv/               # Virtual environment
+├── data/               # Folder for data storage
+│   ├── horse_racing.db
+│   ├── config.json
+│   ├── scraping.log
+├── app/                # Python package for your application
+│   ├── __init__.py
+│   ├── gui.py         
+│   ├── TJK_horse_stats.py      
+│   ├── TJK_jockey_stats.py   
+│   ├── TJK_races_scraper.py
+│   ├── calculations.py 
+│   └── database.py            
+└── main.py              # Entry point to run the application
+```
+
+This structure separates your code into modules and keeps your data organized.
+
+### Application Components:
+
+1. **Database Handling (database.py):** This module will handle the local database for horse and jockey statistics. You can use a lightweight database like SQLite to store and query the data efficiently.
+
+2. **Web Scraping (scraper.py):** This module will contain the code for scraping data from the horse racing website. You can use libraries like `requests` and `BeautifulSoup` for this.
+
+3. **Mathematical Formulas (calculations.py):** Here, you can define the mathematical formulas and calculations to predict race outcomes based on horse and jockey statistics.
+
+4. **GUI (gui.py):** This is where you'll build the graphical user interface for your application using PyQt. You can create buttons to update the database, fetch today's races, and display results.
+
+### API or Website Extensions:
+
+To make your work easier, consider using these:
+
+- **SQLite Database:** For local storage and retrieval of horse and jockey statistics.
+
+- **PyQt:** For building the graphical user interface of your application.
+
+- **Requests and BeautifulSoup:** For web scraping the horse racing website.
+
+- **Pandas:** For data manipulation and analysis, especially when working with CSV files.
+
+### Project Timeline:
+
+Here's a rough project plan with a timeline starting from 10/28/2023:
+
+**Phase 1: Planning and Setup (1 week - 10/28/2023 to 11/03/2023)**
+
+- Define project requirements and goals.
+- Create the folder structure.
+- Set up the virtual environment.
+- Plan the database schema.
+
+**Phase 2: Database and Scraping (2 weeks - 11/04/2023 to 11/17/2023)**
+
+- Implement database handling (SQLite).
+- Develop the web scraper for horse and jockey data.
+- Test data retrieval and storage.
+
+**Phase 3: GUI Design (2 weeks - 11/18/2023 to 12/01/2023)**
+
+- Design the user interface using PyQt.
+- Create buttons for updating the database and fetching today's races.
+- Integrate GUI with database and scraping modules.
+
+**Phase 4: Calculations and Insights (3 weeks - 12/02/2023 to 12/22/2023)**
+
+- Implement mathematical formulas for race predictions.
+- Display calculated insights on the GUI.
+- Test and refine the prediction algorithms.
+
+**Phase 5: Testing and Refinement (2 weeks - 12/23/2023 to 01/05/2024)**
+
+- Conduct comprehensive testing of the entire application.
+- Gather user feedback for improvements.
+- Refine and optimize code and algorithms.
+
+**Phase 6: Documentation and Deployment (1 week - 01/06/2024 to 01/12/2024)**
+
+- Document the project, including code comments and user instructions.
+- Prepare the application for deployment.
+- Deploy the application for personal use.
+
+Remember that these timeframes are rough estimates, and the actual progress may vary based on the complexity of your application and your familiarity with the technologies involved.
+
+Additionally, as you work on each phase, consider breaking down tasks into smaller subtasks and set milestones to help you stay on track.
+
+############################################################################################################################
+
+Certainly, let's start with Phase 1 beginning from 09/28/2023. During this phase, you will set up the project, define its requirements, create a folder structure, set up a virtual environment, and plan the database schema. Here are the steps in more detail:
+
+**Phase 1: Planning and Setup (09/28/2023 - 10/04/2023)**
+
+1. **Define Project Requirements and Goals:**
+   - Clearly define the objectives and goals of your horse racing application. What do you want to achieve with it? What kind of insights or predictions do you want to provide to users?
+
+2. **Folder Structure:**
+   - Create the project folder structure as mentioned earlier. You can use your system's file explorer or terminal to create these directories.
+
+3. **Set Up a Virtual Environment:**
+   - If you haven't already, set up a virtual environment to isolate your project dependencies. You can use `venv` or `virtualenv`. Activate the virtual environment to work within it.
+
+4. **Database Schema Planning:**
+   - Plan the structure of your SQLite database. Decide what tables you need and what information you will store. Consider tables for horses, jockeys, races, and any other relevant data.
+
+5. **Database Initialization:**
+   - Write scripts to create the initial database schema. You can use SQLite's command-line tool or Python's SQLite library to create tables and define their structure.
+
+6. **Project Documentation:**
+   - Create a project documentation folder and start a README file. Document your project's objectives, folder structure, and database schema. This will serve as a reference for your future self and anyone else working on the project.
+
+7. **Technology Research:**
+   - Research the libraries and tools you plan to use. Familiarize yourself with PyQt for the GUI, SQLite for the database, and libraries like pandas, requests, and BeautifulSoup for data handling and web scraping.
+
+8. **Version Control:**
+   - Set up version control for your project if you haven't already. Initialize a Git repository in your project folder and make your initial commit. This will allow you to track changes and collaborate effectively.
+
+By the end of this phase, you should have a well-organized project structure, a defined database schema, and a clear understanding of your project's objectives. You'll be ready to move on to the next phases, which involve implementing the database and web scraping components, designing the GUI, and creating the mathematical calculations for race predictions.
